@@ -133,5 +133,9 @@ This repository is licensed under the MIT License. See the [LICENSE](LICENSE) fi
 
 ## Contact
 
-For any questions or suggestions, feel free to open an issue or contact me at [adityaps2004@gmail.com](mailto:adityaps2004@gmail.com).
+If you have any questions or suggestions, feel free to reach out:
+
+- **GitHub Issues:** Submit an issue [here](https://github.com/ByteBard7881/Assembly/issues).
+- **Email:** adityaps2004@gmail.com
+
 ```
