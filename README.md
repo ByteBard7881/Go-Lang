@@ -5,7 +5,7 @@ This repository contains various examples and snippets for learning and understa
 
 ## Directory Structure
 
-```plaintext
+```
 _CODE/
     Arrays/
         array.go
