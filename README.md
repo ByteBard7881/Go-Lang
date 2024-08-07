@@ -1,7 +1,7 @@
 ```markdown
 # GoLang Repository
 
-This repository contains various examples and snippets for learning and understanding Go programming language.
+This repository contains various examples and snippets for learning and understanding the Go programming language.
 
 ## Directory Structure
 
@@ -119,7 +119,7 @@ Make sure you have Go installed on your system. You can download it from [Go's o
 Each `.go` file in this repository can be run using the `go run` command:
 
 ```sh
-go run _CODE/Arrays/array.go
+go run Arrays/array.go
 ```
 
 Replace `Arrays/array.go` with the path to the file you want to run.
@@ -134,7 +134,5 @@ This repository is licensed under the MIT License. See the [LICENSE](LICENSE) fi
 
 ## Contact
 
-For any questions or suggestions, feel free to open an issue or contact me at [your-email@example.com](mailto:your-email@example.com).
+For any questions or suggestions, feel free to open an issue or contact me at [adityaps2004@gmail.com](mailto:adityaps2004@gmail.com).
 ```
-
-Replace `https://github.com/ByteBard7881/Go-Lang.git` with the actual URL of your GitHub repository and `your-email@example.com` with your email address.
