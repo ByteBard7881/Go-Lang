@@ -135,5 +135,5 @@ This repository is licensed under the MIT License. See the [LICENSE](LICENSE) fi
 
 If you have any questions or suggestions, feel free to reach out:
 
-- **GitHub Issues:** Submit an issue [here](https://github.com/ByteBard7881/Assembly/issues).
+- **GitHub Issues:** Submit an issue [here](https://github.com/ByteBard7881/Go-Lang/issues).
 - **Email:** adityaps2004@gmail.com
