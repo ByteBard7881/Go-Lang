@@ -1,4 +1,3 @@
-```markdown
 # GoLang Repository
 
 This repository contains various examples and snippets for learning and understanding the Go programming language.
