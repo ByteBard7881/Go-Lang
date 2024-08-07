@@ -7,23 +7,23 @@ import (
 )
 
 func main() {
-	// file, err1 := os.Create("example.txt")
+	file, err1 := os.Create("example.txt")
 
-	// if err1 != nil {
-	// 	fmt.Println("[-] Error while creating file: ", err1)
-	// 	return
-	// }
+	if err1 != nil {
+		fmt.Println("[-] Error while creating file: ", err1)
+		return
+	}
 
-	// defer file.Close()
+	defer file.Close()
 
-	// content := "Hello World!!!"
-	// _, err2 := io.WriteString(file, content)
-	// if err2 != nil {
-	// 	fmt.Println("[-] Error while creating file: ", err2)
-	// 	return
-	// }
+	content := "Hello World!!!"
+	_, err2 := io.WriteString(file, content)
+	if err2 != nil {
+		fmt.Println("[-] Error while creating file: ", err2)
+		return
+	}
 
-	// fmt.Println("[+] File Created.")
+	fmt.Println("[+] File Created.")
 
 	// Reading file using buffer
 	file, err3 := os.Open("example.txt")
@@ -48,10 +48,10 @@ func main() {
 	}
 
 	// Reading file using ioutil
-	content, err5 := os.ReadFile("example.txt")
-	if err5 != nil {
-		fmt.Println("[-] Error while reading file: ", err5)
-		return
-	}
-	fmt.Println("Reading file using os: " + string(content))
+	// content, err5 := os.ReadFile("example.txt")
+	// if err5 != nil {
+	// 	fmt.Println("[-] Error while reading file: ", err5)
+	// 	return
+	// }
+	// fmt.Println("Reading file using os: " + string(content))
 }
