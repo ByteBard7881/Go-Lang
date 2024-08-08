@@ -49,10 +49,7 @@ _CODE/
 - **array.go**: Examples of array operations in Go.
 
 ### CRUD (Create, Read, Update, Delete)
-- **delete.go**: Example of delete operation.
-- **get.go**: Example of get operation.
-- **post.go**: Example of post operation.
-- **update.go**: Example of update operation.
+- **crud.go**: Example of all crud operations such as get, post, delete, update.
 
 ### Condition
 - **cond.go**: Examples of conditional statements.
