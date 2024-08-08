@@ -17,10 +17,11 @@ type FakeAPI struct {
 
 func main() {
 	fmt.Println("CRUD Operations")
-	post_url := "https://jsonplaceholder.typicode.com/todos"
-	get_url := "https://jsonplaceholder.typicode.com/todos/1"
-	get(get_url)
-	post(post_url)
+	get_put_url := "https://jsonplaceholder.typicode.com/todos/1"
+	put_url := "https://jsonplaceholder.typicode.com/todos/1"
+	get(get_put_url)
+	post(get_put_url)
+	put(put_url)
 }
 
 func get(get_url string) {
@@ -81,4 +82,35 @@ func post(post_url string) {
 
 	post_readable_format, _ := ioutil.ReadAll(post_response.Body)
 	fmt.Println(string(post_readable_format))
+}
+
+func put(put_url string) {
+	put_fake_api := FakeAPI{
+		User_Id:   1,
+		Id:        1,
+		Title:     "Nigga",
+		Completed: true,
+	}
+
+	put_fake_json, put_fake_json_error := json.Marshal(put_fake_api)
+
+	if put_fake_json_error != nil {
+		fmt.Println("[-] Error while encoding struct to json: ", put_fake_json_error)
+		return
+	}
+
+	put_fake_json_reader := strings.NewReader(string(put_fake_json))
+
+	put_json_request, put_json_request_error := http.NewRequest(http.MethodPut, put_url, put_fake_json_reader)
+
+	if put_json_request_error != nil {
+		fmt.Println("[-] Error while perfroming put request: ", put_json_request_error)
+		return
+	}
+
+	defer put_json_request.Body.Close()
+
+	put_json_request_bytes, _ := ioutil.ReadAll(put_json_request.Body)
+
+	fmt.Println(string(put_json_request_bytes))
 }
