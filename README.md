@@ -9,10 +9,7 @@ _CODE/
     Arrays/
         array.go
     CRUD/
-        delete.go
-        get.go
-        post.go
-        update.go
+        crud.go
     Condition/
         cond.go
     File/
