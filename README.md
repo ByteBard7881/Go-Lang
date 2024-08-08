@@ -8,7 +8,7 @@ This repository contains various examples and snippets for learning and understa
 _CODE/
     Arrays/
         array.go
-    CRUD/
+    RESTful/
         restful.go
     Condition/
         cond.go
