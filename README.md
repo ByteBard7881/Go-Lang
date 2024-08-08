@@ -48,7 +48,7 @@ _CODE/
 ### Arrays
 - **array.go**: Examples of array operations in Go.
 
-### CRUD (Create, Read, Update, Delete)
+### RESTful (Get, Post, Put, Delete)
 - **restful.go**: Example of all restful api operations such as get, post, put, delete.
 
 ### Condition
