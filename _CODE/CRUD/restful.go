@@ -17,7 +17,7 @@ type FakeAPI struct {
 }
 
 func main() {
-	fmt.Println("CRUD Operations")
+	fmt.Println("-----RESTful API Operations-----")
 
 	// URLs for GET, POST, and PUT operations
 	get_put_url := "https://jsonplaceholder.typicode.com/todos/1"
@@ -57,7 +57,7 @@ func get(get_url string) {
 	}
 
 	// Print the response data and status
-	fmt.Println("Get Response: ", string(get_data)+"   "+get_response.Status)
+	fmt.Println("\nGet Response: ", string(get_data)+"   "+get_response.Status)
 }
 
 // Function to perform a POST request
@@ -92,7 +92,7 @@ func post(post_url string) {
 
 	// Read and print the response body and status
 	post_readable_format, _ := ioutil.ReadAll(post_response.Body)
-	fmt.Println("Post Response: ", string(post_readable_format)+"   "+post_response.Status)
+	fmt.Println("\nPost Response: ", string(post_readable_format)+"   "+post_response.Status)
 }
 
 // Function to perform a PUT request
@@ -140,5 +140,5 @@ func put(put_url string) {
 
 	// Read and print the response body and status
 	put_json_request_bytes, _ := ioutil.ReadAll(put_request.Body)
-	fmt.Println("Put Response: ", string(put_json_request_bytes)+"   "+put_request.Status)
+	fmt.Println("\nPut Response: ", string(put_json_request_bytes)+"   "+put_request.Status)
 }

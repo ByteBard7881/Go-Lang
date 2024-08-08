@@ -9,7 +9,7 @@ _CODE/
     Arrays/
         array.go
     CRUD/
-        crud.go
+        restful.go
     Condition/
         cond.go
     File/
@@ -49,7 +49,7 @@ _CODE/
 - **array.go**: Examples of array operations in Go.
 
 ### CRUD (Create, Read, Update, Delete)
-- **crud.go**: Example of all crud operations such as get, post, delete, update.
+- **restful.go**: Example of all restful api operations such as get, post, put, delete.
 
 ### Condition
 - **cond.go**: Examples of conditional statements.
