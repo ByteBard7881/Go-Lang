@@ -48,9 +48,6 @@ _CODE/
 ### Arrays
 - **array.go**: Examples of array operations in Go.
 
-### RESTful (Get, Post, Put, Delete)
-- **restful.go**: Example of all restful api operations such as get, post, put, delete.
-
 ### Condition
 - **cond.go**: Examples of conditional statements.
 
@@ -77,6 +74,9 @@ _CODE/
 
 ### Pointer
 - **point.go**: Examples of pointer usage.
+
+### RESTful (Get, Post, Put, Delete)
+- **restful.go**: Example of all restful api operations such as get, post, put, delete.
 
 ### Slices
 - **slices.go**: Examples of slice operations.
