@@ -20,13 +20,13 @@ func main() {
 	fmt.Println("-----RESTful API Operations-----")
 
 	// URLs for GET, POST, and PUT operations
-	get_put_url := "https://jsonplaceholder.typicode.com/todos/1"
+	get_put_delete_url := "https://jsonplaceholder.typicode.com/todos/1"
 	post_url := "https://jsonplaceholder.typicode.com/todos"
 
 	// Perform GET, POST, and PUT operations
-	get(get_put_url)
+	get(get_put_delete_url)
 	post(post_url)
-	put(get_put_url)
+	put(get_put_delete_url)
 }
 
 // Function to perform a GET request
