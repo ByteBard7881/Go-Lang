@@ -27,6 +27,7 @@ func main() {
 	get(get_put_delete_url)
 	post(post_url)
 	put(get_put_delete_url)
+	delete(get_put_delete_url)
 }
 
 // Function to perform a GET request
@@ -141,4 +142,30 @@ func put(put_url string) {
 	// Read and print the response body and status
 	put_json_request_bytes, _ := ioutil.ReadAll(put_request.Body)
 	fmt.Println("\nPut Response: ", string(put_json_request_bytes)+"   "+put_request.Status)
+}
+
+func delete(delete_url string) {
+	// Create a new DELETE request
+	delete_request, delete_request_error := http.NewRequest(http.MethodDelete, delete_url, nil)
+
+	if delete_request_error != nil { // Handle errors in creating DELETE request
+		fmt.Println("[-] Error while performing delete method: ", delete_request_error)
+		return
+	}
+
+	client := http.Client{} // Create an HTTP client
+
+	// Send the DELETE request
+	client_delete_request, client_delete_request_error := client.Do(delete_request)
+
+	if client_delete_request_error != nil { // Handle errors in sending DELETE request
+		fmt.Println("[-] Error while sending delete request: ", delete_request_error)
+		return
+	}
+
+	defer client_delete_request.Body.Close() // Ensure the response body is closed after function execution
+
+	// Read and print the response body and status
+	delete_bytes_data, _ := ioutil.ReadAll(client_delete_request.Body)
+	fmt.Println("\nDelete Response: ", string(delete_bytes_data)+"   "+client_delete_request.Status)
 }
