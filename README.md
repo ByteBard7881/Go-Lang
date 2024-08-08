@@ -8,8 +8,6 @@ This repository contains various examples and snippets for learning and understa
 _CODE/
     Arrays/
         array.go
-    RESTful/
-        restful.go
     Condition/
         cond.go
     File/
@@ -28,6 +26,8 @@ _CODE/
         url.go
     Pointer/
         point.go
+    RESTful/
+        restful.go
     Slices/
         slices.go
     Strings/
