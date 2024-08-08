@@ -19,11 +19,11 @@ type FakeAPI struct {
 func main() {
 	fmt.Println("-----RESTful API Operations-----")
 
-	// URLs for GET, POST, and PUT operations
+	// URLs for GET, POST, PUT and DELETE operations
 	get_put_delete_url := "https://jsonplaceholder.typicode.com/todos/1"
 	post_url := "https://jsonplaceholder.typicode.com/todos"
 
-	// Perform GET, POST, and PUT operations
+	// Perform GET, POST, PUT and DELETE operations
 	get(get_put_delete_url)
 	post(post_url)
 	put(get_put_delete_url)
@@ -144,6 +144,7 @@ func put(put_url string) {
 	fmt.Println("\nPut Response: ", string(put_json_request_bytes)+"   "+put_request.Status)
 }
 
+// Function to perform a DELETE request
 func delete(delete_url string) {
 	// Create a new DELETE request
 	delete_request, delete_request_error := http.NewRequest(http.MethodDelete, delete_url, nil)
